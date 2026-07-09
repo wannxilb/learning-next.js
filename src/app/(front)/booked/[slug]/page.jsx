@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function BookedDetailPage() {
   return (
@@ -9,28 +10,34 @@ export default function BookedDetailPage() {
           <div className="swiper-wrapper">
             <div className="swiper-slide !w-fit">
               <div className="w-[700px] h-[550px] overflow-hidden">
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnail-details-1.png"
                   className="w-full h-full object-cover"
                   alt="thumbnail"
+                  width={700}
+                  height={550}
                 />
               </div>
             </div>
             <div className="swiper-slide !w-fit">
               <div className="w-[700px] h-[550px] overflow-hidden">
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnail-details-2.png"
                   className="w-full h-full object-cover"
                   alt="thumbnail"
+                  width={700}
+                  height={550}
                 />
               </div>
             </div>
             <div className="swiper-slide !w-fit">
               <div className="w-[700px] h-[550px] overflow-hidden">
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnail-details-3.png"
                   className="w-full h-full object-cover"
                   alt="thumbnail"
+                  width={700}
+                  height={550}
                 />
               </div>
             </div>
@@ -51,40 +58,52 @@ export default function BookedDetailPage() {
                 Angga Park Central <br /> Master Capitalize
               </h1>
               <div className="flex items-center gap-[6px] mt-[10px]">
-                <img
+                <Image
                   src="/assets/images/icons/location.svg"
                   className="w-6 h-6"
                   alt="icon"
+                  width={24}
+                  height={24}
                 />
                 <p className="font-semibold">Jakarta Pusat</p>
               </div>
             </div>
             <div className="flex flex-col gap-[6px]">
               <div className="flex items-center gap-1">
-                <img
+                <Image
                   src="/assets/images/icons/Star 1.svg"
                   className="w-5 h-5"
                   alt="star"
+                  width={20}
+                  height={20}
                 />
-                <img
+                <Image
                   src="/assets/images/icons/Star 1.svg"
                   className="w-5 h-5"
                   alt="star"
+                  width={20}
+                  height={20}
                 />
-                <img
+                <Image
                   src="/assets/images/icons/Star 1.svg"
                   className="w-5 h-5"
                   alt="star"
+                  width={20}
+                  height={20}
                 />
-                <img
+                <Image
                   src="/assets/images/icons/Star 1.svg"
                   className="w-5 h-5"
                   alt="star"
+                  width={20}
+                  height={20}
                 />
-                <img
+                <Image
                   src="/assets/images/icons/Star 5.svg"
                   className="w-5 h-5"
                   alt="star"
+                  width={20}
+                  height={20}
                 />
               </div>
               <p className="font-semibold text-right">4.5/5 (19,384)</p>
@@ -101,10 +120,12 @@ export default function BookedDetailPage() {
           <h2 className="font-bold">You Get What You Need Most</h2>
           <div className="grid grid-cols-3 gap-x-5 gap-y-[30px]">
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src="/assets/images/icons/security-user.svg"
                 className="w-[34px] h-[34px]"
                 alt="icon"
+                width={34}
+                height={34}
               />
               <div className="flex flex-col gap-[2px]">
                 <p className="font-bold text-lg leading-[24px]">Privacy</p>
@@ -112,10 +133,12 @@ export default function BookedDetailPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src="/assets/images/icons/cup.svg"
                 className="w-[34px] h-[34px]"
                 alt="icon"
+                width={34}
+                height={34}
               />
               <div className="flex flex-col gap-[2px]">
                 <p className="font-bold text-lg leading-[24px]">Global Event</p>
@@ -123,10 +146,12 @@ export default function BookedDetailPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src="/assets/images/icons/home-trend-up.svg"
                 className="w-[34px] h-[34px]"
                 alt="icon"
+                width={34}
+                height={34}
               />
               <div className="flex flex-col gap-[2px]">
                 <p className="font-bold text-lg leading-[24px]">
@@ -136,10 +161,12 @@ export default function BookedDetailPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src="/assets/images/icons/coffee.svg"
                 className="w-[34px] h-[34px]"
                 alt="icon"
+                width={34}
+                height={34}
               />
               <div className="flex flex-col gap-[2px]">
                 <p className="font-bold text-lg leading-[24px]">Extra Snacks</p>
@@ -147,10 +174,12 @@ export default function BookedDetailPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src="/assets/images/icons/3dcube.svg"
                 className="w-[34px] h-[34px]"
                 alt="icon"
+                width={34}
+                height={34}
               />
               <div className="flex flex-col gap-[2px]">
                 <p className="font-bold text-lg leading-[24px]">Compact</p>
@@ -158,10 +187,12 @@ export default function BookedDetailPage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <img
+              <Image
                 src="/assets/images/icons/group.svg"
                 className="w-[34px] h-[34px]"
                 alt="icon"
+                width={34}
+                height={34}
               />
               <div className="flex flex-col gap-[2px]">
                 <p className="font-bold text-lg leading-[24px]">Free Move</p>
@@ -207,30 +238,36 @@ export default function BookedDetailPage() {
             <hr className="border-[#F6F5FD]" />
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="/assets/images/icons/verify.svg"
                   className="w-[30px] h-[30px]"
                   alt="icon"
+                  width={30}
+                  height={30}
                 />
                 <p className="font-semibold leading-[28px]">
                   Mendapatkan akses pembelajaran terbaru terkait dunia startup
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="/assets/images/icons/verify.svg"
                   className="w-[30px] h-[30px]"
                   alt="icon"
+                  width={30}
+                  height={30}
                 />
                 <p className="font-semibold leading-[28px]">
                   Mendapatkan akses pembelajaran terbaru terkait dunia startup
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="/assets/images/icons/verify.svg"
                   className="w-[30px] h-[30px]"
                   alt="icon"
+                  width={30}
+                  height={30}
                 />
                 <p className="font-semibold leading-[28px]">
                   Mendapatkan akses pembelajaran terbaru terkait dunia startup
@@ -240,10 +277,12 @@ export default function BookedDetailPage() {
             <hr className="border-[#F6F5FD]" />
             <div className="flex flex-col gap-[14px]">
               <button className="flex items-center justify-center w-full rounded-full border border-[#000929] p-[16px_26px] gap-3 bg-white font-semibold">
-                <img
+                <Image
                   src="/assets/images/icons/save-add.svg"
                   className="w-6 h-6"
                   alt="icon"
+                  width={24}
+                  height={24}
                 />
                 <span>Save for Later</span>
               </button>
@@ -255,10 +294,12 @@ export default function BookedDetailPage() {
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-4">
                   <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
-                    <img
+                    <Image
                       src="/assets/images/photos/photo-1.png"
                       className="w-full h-full object-cover"
                       alt="photo"
+                      width={60}
+                      height={60}
                     />
                   </div>
                   <div className="flex flex-col gap-[2px]">
@@ -268,17 +309,21 @@ export default function BookedDetailPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <a href="#">
-                    <img
+                    <Image
                       src="/assets/images/icons/call-green.svg"
                       className="w-10 h-10"
                       alt="icon"
+                      width={40}
+                      height={40}
                     />
                   </a>
                   <a href="#">
-                    <img
+                    <Image
                       src="/assets/images/icons/chat-green.svg"
                       className="w-10 h-10"
                       alt="icon"
+                      width={40}
+                      height={40}
                     />
                   </a>
                 </div>
@@ -286,10 +331,12 @@ export default function BookedDetailPage() {
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-4">
                   <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
-                    <img
+                    <Image
                       src="/assets/images/photos/photo-2.png"
                       className="w-full h-full object-cover"
                       alt="photo"
+                      width={60}
+                      height={60}
                     />
                   </div>
                   <div className="flex flex-col gap-[2px]">
@@ -299,17 +346,21 @@ export default function BookedDetailPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <a href="#">
-                    <img
+                    <Image
                       src="/assets/images/icons/call-green.svg"
                       className="w-10 h-10"
                       alt="icon"
+                      width={40}
+                      height={40}
                     />
                   </a>
                   <a href="#">
-                    <img
+                    <Image
                       src="/assets/images/icons/chat-green.svg"
                       className="w-10 h-10"
                       alt="icon"
+                      width={40}
+                      height={40}
                     />
                   </a>
                 </div>

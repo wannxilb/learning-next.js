@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function CityDetailPage() {
   return (
@@ -23,10 +24,12 @@ export default function CityDetailPage() {
             id="Hero-Image"
             className="absolute right-0 w-[calc(100%-((100%-1130px)/2)-305px)] h-[434px] rounded-bl-[40px] overflow-hidden"
           >
-            <img
+            <Image
               src="/assets/images/thumbnails/thumbnail-details-4.png"
               className="w-full h-full object-cover"
               alt="hero background"
+              fill
+              sizes="100vw"
             />
           </div>
         </section>
@@ -45,10 +48,12 @@ export default function CityDetailPage() {
                 <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
                   Popular
                 </p>
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnails-1.png"
                   className="w-full h-full object-cover"
                   alt="thumbnails"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
@@ -61,47 +66,57 @@ export default function CityDetailPage() {
                   </p>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">20 days</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/clock.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/location.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Jakarta Pusat</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">4.5/5</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/Star 1.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/wifi.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Fast-Connection</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Secure 100%</p>
                   </div>
@@ -115,10 +130,12 @@ export default function CityDetailPage() {
                 <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
                   Popular
                 </p>
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnails-3.png"
                   className="w-full h-full object-cover"
                   alt="thumbnails"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
@@ -131,47 +148,57 @@ export default function CityDetailPage() {
                   </p>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">20 days</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/clock.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/location.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Jakarta Pusat</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">4.5/5</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/Star 1.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/wifi.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Fast-Connection</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Secure 100%</p>
                   </div>
@@ -185,10 +212,12 @@ export default function CityDetailPage() {
                 <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
                   Popular
                 </p>
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnails-4.png"
                   className="w-full h-full object-cover"
                   alt="thumbnails"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
@@ -201,47 +230,57 @@ export default function CityDetailPage() {
                   </p>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">20 days</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/clock.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/location.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Jakarta Pusat</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">4.5/5</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/Star 1.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/wifi.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Fast-Connection</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Secure 100%</p>
                   </div>
@@ -255,10 +294,12 @@ export default function CityDetailPage() {
                 <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
                   Popular
                 </p>
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnails-5.png"
                   className="w-full h-full object-cover"
                   alt="thumbnails"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
@@ -271,47 +312,57 @@ export default function CityDetailPage() {
                   </p>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">20 days</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/clock.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/location.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Jakarta Pusat</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">4.5/5</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/Star 1.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/wifi.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Fast-Connection</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Secure 100%</p>
                   </div>
@@ -325,10 +376,12 @@ export default function CityDetailPage() {
                 <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
                   Popular
                 </p>
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnails-6.png"
                   className="w-full h-full object-cover"
                   alt="thumbnails"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
@@ -341,47 +394,57 @@ export default function CityDetailPage() {
                   </p>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">20 days</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/clock.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/location.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Jakarta Pusat</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">4.5/5</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/Star 1.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/wifi.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Fast-Connection</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Secure 100%</p>
                   </div>
@@ -395,10 +458,12 @@ export default function CityDetailPage() {
                 <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
                   Popular
                 </p>
-                <img
+                <Image
                   src="/assets/images/thumbnails/thumbnails-2.png"
                   className="w-full h-full object-cover"
                   alt="thumbnails"
+                  width={24}
+                  height={24}
                 />
               </div>
               <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
@@ -411,47 +476,57 @@ export default function CityDetailPage() {
                   </p>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">20 days</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/clock.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/location.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Jakarta Pusat</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
                     <p className="font-semibold">4.5/5</p>
-                    <img
+                    <Image
                       src="/assets/images/icons/Star 1.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                   </div>
                 </div>
                 <hr className="border-[#F6F5FD]" />
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/wifi.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Fast-Connection</p>
                   </div>
                   <div className="flex items-center justify-end gap-[6px]">
-                    <img
+                    <Image
                       src="/assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
+                      width={24}
+                      height={24}
                     />
                     <p className="font-semibold">Secure 100%</p>
                   </div>
