@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="flex flex-col w-full">
-      <section id="Hero-Banner" className="relative flex h-[720px] -mb-[93px]">
+      <section id="Hero-Banner" className="relative flex h-[720px] mb-[93px]">
         <div
           id="Hero-Text"
           className="relative flex flex-col w-full max-w-[650px] h-fit rounded-[30px] border border-[#E0DEF7] p-10 gap-[30px] bg-white mt-[70px] ml-[calc((100%-1130px)/2)] z-10"
@@ -71,6 +71,8 @@ export default function Header() {
             fill
             sizes="100vw"
             alt="hero background"
+            priority
+            loading="eager"
           />
         </div>
       </section>
@@ -81,35 +83,35 @@ export default function Header() {
             alt="clients logo"
             width={120}
             height={38}
-            style={{ width: "auto", height: "auto", maxHeight: "38px" }}
+            className="h-[38px] w-auto"
           />
           <Image
             src="/assets/images/logos/Libra 2.svg"
             alt="clients logo"
             width={120}
             height={38}
-            style={{ width: "auto", height: "auto", maxHeight: "38px" }}
+            className="h-[38px] w-auto"
           />
           <Image
             src="/assets/images/logos/Binance logo.svg"
             width={120}
             height={38}
             alt="clients logo"
-            style={{ width: "auto", height: "auto", maxHeight: "38px" }}
+            className="h-[38px] w-auto"
           />
           <Image
             src="/assets/images/logos/Facebook 7.svg"
             alt="clients logo"
             width={120}
             height={38}
-            style={{ width: "auto", height: "auto", maxHeight: "38px" }}
+            className="h-[38px] w-auto"
           />
           <Image
             src="/assets/images/logos/Microsoft 6.svg"
             alt="clients logo"
             width={120}
             height={38}
-            style={{ width: "auto", height: "auto", maxHeight: "38px" }}
+            className="h-[38px] w-auto"
           />
         </div>
         <div className="flex justify-center gap-[50px]">
