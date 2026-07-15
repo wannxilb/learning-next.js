@@ -1,48 +1,39 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
+import { office as offices } from "@/features/offices/data/offices.mock";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function OfficeSpaceDetailPage() {
   return (
     <>
       <Navbar />
       <section id="Gallery" className="mb-[50px]">
-        <div className="swiper w-full">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView="auto"
+          slidesOffsetAfter={10}
+          slidesOffsetBefore={10}
+          className="swiper w-full"
+        >
           <div className="swiper-wrapper">
-            <div className="swiper-slide w-fit!">
-              <div className="w-[700px] h-[550px] overflow-hidden">
-                <Image
-                  src="/assets/images/thumbnails/thumbnail-details-1.png"
-                  className="w-full h-full object-cover"
-                  alt="Office gallery preview 1"
-                  width={700}
-                  height={550}
-                />
-              </div>
-            </div>
-            <div className="swiper-slide w-fit!">
-              <div className="w-[700px] h-[550px] overflow-hidden">
-                <Image
-                  src="/assets/images/thumbnails/thumbnail-details-2.png"
-                  className="w-full h-full object-cover"
-                  alt="Office gallery preview 2"
-                  width={700}
-                  height={550}
-                />
-              </div>
-            </div>
-            <div className="swiper-slide w-fit!">
-              <div className="w-[700px] h-[550px] overflow-hidden">
-                <Image
-                  src="/assets/images/thumbnails/thumbnail-details-3.png"
-                  className="w-full h-full object-cover"
-                  alt="Office gallery preview 3"
-                  width={700}
-                  height={550}
-                />
-              </div>
-            </div>
+            {offices.map((item) => (
+              <SwiperSlide key={item.id} className="swiper-slide w-fit">
+                <div className="w-[700px] h-[550px] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    className="w-full h-full object-cover"
+                    alt={`Office gallery preview ${item.id}`}
+                    width={700}
+                    height={550}
+                    loading="eager"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </div>
-        </div>
+        </Swiper>
       </section>
       <section
         id="Details"

@@ -6,7 +6,13 @@ const Navbar = () => {
     <nav className="bg-white">
       <div className="flex items-center justify-between w-full max-w-[1130px] py-[22px] mx-auto">
         <Link href="/">
-          <Image width={165} height={36} src="/assets/images/logos/logo.svg" alt="logo" />
+          <Image
+            width={165}
+            height={36}
+            src="/assets/images/logos/logo.svg"
+            alt="logo"
+            loading="eager"
+          />
         </Link>
         <ul className="flex items-center gap-[50px] w-fit">
           <li>

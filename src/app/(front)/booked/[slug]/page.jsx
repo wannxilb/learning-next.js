@@ -5,10 +5,10 @@ export default function BookedDetailPage() {
   return (
     <>
       <Navbar />
-      <section id="Gallery" className="-mb-[50px]">
+      <section id="Gallery" className="mb-[50px]">
         <div className="swiper w-full">
           <div className="swiper-wrapper">
-            <div className="swiper-slide !w-fit">
+            <div className="swiper-slide w-fit">
               <div className="w-[700px] h-[550px] overflow-hidden">
                 <Image
                   src="/assets/images/thumbnails/thumbnail-details-1.png"
@@ -16,10 +16,11 @@ export default function BookedDetailPage() {
                   alt="thumbnail"
                   width={700}
                   height={550}
+                  loading="eager"
                 />
               </div>
             </div>
-            <div className="swiper-slide !w-fit">
+            <div className="swiper-slide w-fit">
               <div className="w-[700px] h-[550px] overflow-hidden">
                 <Image
                   src="/assets/images/thumbnails/thumbnail-details-2.png"
@@ -30,7 +31,7 @@ export default function BookedDetailPage() {
                 />
               </div>
             </div>
-            <div className="swiper-slide !w-fit">
+            <div className="swiper-slide w-fit">
               <div className="w-[700px] h-[550px] overflow-hidden">
                 <Image
                   src="/assets/images/thumbnails/thumbnail-details-3.png"
@@ -209,7 +210,7 @@ export default function BookedDetailPage() {
           <div className="overflow-hidden w-full h-[280px]">
             <div
               id="my-map-display"
-              className="h-full w-full max-w-[none] bg-none"
+              className="h-full w-full max-w-none bg-none"
             >
               <iframe
                 className="h-full w-full border-0"
